@@ -1,0 +1,13 @@
+spring:
+    datasource:
+        url: jdbc:sqlserver://event-cooker.database.windows.net:1433;database=event-cooker;user=alif@event-cooker;password=Aa11****11aA;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+        # username: alif
+        # password: Aa11****11aA
+    jpa:
+        show-sql: true
+        hibernate:
+            ddl-auto: update
+            dialect: org.hibernate.dialect.SQLServer1012Dialect
+
+server:
+    port: 8081
